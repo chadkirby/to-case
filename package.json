@@ -1,0 +1,23 @@
+{
+  "name": "@ckirby/to-case",
+  "version": "0.0.0",
+  "description": "tiny snake/camel/kebab case convertors",
+  "main": "index.js",
+  "repository": "https://github.com/chadkirby/to-case.git",
+  "author": "Chad Kirby <chad.kirby@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-turbopatent": "^6.0.0",
+    "tape": "^4.13.2",
+    "tom-jumbo-grumbo": "git+ssh://git@github.com/PatentNavigation/tom-jumbo-grumbo.git"
+  },
+  "files": [ "index.js" ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "yarn lint && yarn test:tape",
+    "test:tape": "tape tests/*-test.js",
+    "release": "tp-release"
+  }
+}
